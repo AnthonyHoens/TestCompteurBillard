@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="HEPL" />
+
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,800i" rel="stylesheet">
+
+    <title>Billard</title>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Billard</h1>
+	</header>
+	<section id="joueur">
+		<h2 class="hidden">Séléctionner un joueur</h2>
+		<form name="SelectJoueur" id="SelectJoueur" method="post" action="#">
+			<fieldset>
+				<label for="joueur1">Joueur 1</label>
+				<select name="joueur1" size="4" required>
+					<option value="1">Anthony</option>
+					<option value="2">Masset</option>
+					<option value="3">Noémie</option>
+					<option value="4">Luca</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<label for="joueur2">Joueur 2</label>
+				<select name="joueur2" size="4" required>
+					<option value="5">Anthony</option>
+					<option value="6">Masset</option>
+					<option value="7">Noémie</option>
+					<option value="8">Luca</option>
+				</select>
+			</fieldset>
+			<input type="submit" value="Jouez">
+		</form>
+	</section>
+	<section id="jeu" class="hidden">
+		<div>
+			<h2 id="joueurOne">
+				Joueur 1
+			</h2>
+			<p class="score" id="scoreJoueurOne">
+				00
+			</p>
+			<input type="submit" id="win1" name="win1">
+		</div>
+		<div>
+			<h2 id="joueurTwo">
+				Joueur 2
+			</h2>
+			<p class="score" id="scoreJoueurTwo">
+				00
+			</p>
+			<input type="submit" id="win2" name="win2">
+		</div>
+	</section>
+	
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
