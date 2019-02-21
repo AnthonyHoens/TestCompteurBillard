@@ -46,12 +46,12 @@
     const form = document.getElementById("joueur");
     let winner1 = document.getElementById("win1");
     let winner2 = document.getElementById("win2");
+    const joueur1Selec = document.getElementsByName('joueur1')[0].selectedOptions;
+    const joueur2Selec = document.getElementsByName('joueur2')[0].selectedOptions;
 
 
 
     function submitJeu (e) {
-            const joueur1Selec = document.getElementsByName('joueur1')[0].selectedOptions;
-            const joueur2Selec = document.getElementsByName('joueur2')[0].selectedOptions;
             const playerOne = document.getElementById("joueurOne");
             const playerTwo = document.getElementById("joueurTwo");
             let scoreOne = document.getElementById("scoreJoueurOne");
@@ -108,9 +108,9 @@
     }
 
 
+
     function fPageIsLoaded() {
         document.getElementById("SelectJoueur").addEventListener("submit", submitJeu, false);       
-
     };
 
 
