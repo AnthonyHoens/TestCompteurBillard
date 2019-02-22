@@ -1,107 +1,130 @@
 body {
 	font-family: 'Open Sans', sans-serif;
-	min-height: 90vh;
-	background: url("../img/billiard.jpg") no-repeat center;
-	color: white;
-}
-h1 {
-	font-size: 100px;
-	font-style: italic;
-	font-weight: 800;
+	font-size: 10px;
 	text-align: center;
-	text-shadow: 7px 7px 5px rgba(0,0,0,0.75);
-	margin: 0.3em 0;
+	min-height: 90vh;
+	background: url("../img/billardBlur.jpg") no-repeat center;
+}
+p {
+	margin: 0;
 }
 .hidden {
 	display: none;
 }
-
-.flex {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-content: center;
-	margin-bottom: 3em;
-}
-label {
-	display: block;
-	font-size: 40px;
-	font-weight: 700;
-	margin-bottom: 20px;
-}
-input[type='text'] {
-	display: block;
-	font-size: 22px;
-	width: 90%;
-	padding: 10px 5%;
-	border: none;
-	border-radius: 100px;
-}
-input[type="submit"] {
-	display: block;
-	font-size: 2em;
+h1 {
+	font-size: 9em;
 	font-weight: 800;
-	padding: 5px 50px;
-	border: none;
-	border-radius: 100px;
-	width: 50%;
-	margin: 0 auto;
-	color: rgba(0,0,0,0.75);
-	background-color: white;
+	font-style: italic;
+	text-transform: uppercase;
+	color: white;
+	margin: 0.2em 0;
+	text-shadow: 8px 5px 10px rgba(0, 0, 0, 0.25);
 }
 form {
-	width: 70%;
+	position: relative;
+	width: 86em;
 	margin: 0 auto;
-	text-align: center;
+	padding: 4em 11em 3em;
+	background-color: white;
+	border-radius: 15px;
 }
 fieldset {
-	display: inline-block;
-	width: 45%;
 	border: none;
 }
-select {
-	width: 100%;
-	font-size: 20px;
-	text-align: center;
-	border-radius: 25px;
-	margin-bottom: 2em;
-	overflow: hidden;
+h2 {
+	font-size: 2.3em;
+	font-weight: 700;
+	display: block;
+	width: 9em;
+	color: #428efe;
+	margin: 0 auto 3em;
+	text-transform: uppercase;
 }
-option {
-	font-weight: 800;
-	padding: 10px 0;
-}
-section {
+#player {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	align-content: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 5em;
+	border: none;
 }
-h2 {
-	font-size: 50px;
+#player div {
+	min-width: 12em;
+	padding: 1em 2em;
+	background-color: white;
+	border: 2px solid #eff0f4;
+	box-shadow: 0px 3px 8px rgba(0,0,0,0.5);
+	border-radius: 15px;
+}
+h3 {
+	font-size: 2em;
 	font-weight: 700;
-	text-align:center;
-	margin: 0;
+	color: #9eabbe;
+	margin-bottom: 1em;
 }
-.score {
-	font-size: 180px;
-	font-weight: 800;
-	width: 100%;
+.intitule {
+	font-size: 1em;
+	font-weight: 300;
+	text-transform: uppercase;
+	width: 10em;
+	margin: 0 auto 0.5em;
+}
+.intituleScore {
+	font-size: 1em;
+	font-weight: 600;
+	font-style: italic;
+	margin-bottom: 1em;
+}
+img {
+	position: absolute;
+	top: 2.5em;
+	right: 2.5em;
+	width: 3em;
+}
+input[type= "submit"] {
+	display: block;
+	font-size: 2em;
+	font-weight: 700;
+	margin: 0 auto;
+	padding: 1em 3em;
+	text-transform: uppercase;
+	color: #9eabbe;
+	background-color: #fbfbfb;
+	border: 2px solid #f4f5f7;
+	border-radius: 5em;
+	box-shadow: 0px 3px 8px rgba(0,0,0,0.5);
+}
+#player .premierJoueur {
+	position: relative;
+	border: 2px solid #428efe;
+	box-shadow: none;
+}
+.premierJoueur::before, .deuxiemeJoueur::before {
+	content: "";
+	display: block;
+	padding: 0.4em 0.8em;
+	font-size: 1.6em;
+	font-weight: 600;
+	font-style: italic;
+	border-radius: 3em;
+	position: absolute;
+	top: -0.4em;
+	right: -0.8em;
 	text-align: center;
-	margin: 0;
-	padding: 0;
+	color: white;
+
 }
-#win1, #win2 {
-	display: inline-block;
-	width: 100%;
-	text-align:center;
-	margin-top: 40px;
+.premierJoueur::before {
+	content: "1";
+	background-color: #428efe;
 }
-.vs {
-	font-size: 4em;
-	font-weight: 800;
-	text-align: center;
-	vertical-align: middle;
-	margin-top: 2em;
-	text-shadow: 7px 7px 5px rgba(0,0,0,0.5);
+.deuxiemeJoueur::before {
+	content: "2";
+	background-color: #b5eb26;
+}
+#player .deuxiemeJoueur {
+	position: relative;
+	border: 2px solid #b5eb26;
+	box-shadow: none;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Anthony Hoens" />
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,800i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600i,700,800i" rel="stylesheet">
 
     <title>Billard</title>
     <script type="text/javascript" src="js/script.js"></script>
@@ -13,51 +13,101 @@
 	<header>
 		<h1>Billard</h1>
 	</header>
-	<section id="joueur">
+	<section id="form">
 		<h2 class="hidden">Séléctionner un joueur</h2>
 		<form name="SelectJoueur" id="SelectJoueur" method="post" action="#">
 			<fieldset>
-				<label for="joueur1">Joueur 1</label>
-				<select name="joueur1" size="4" required>
-					<option value="1">Anthony</option>
-					<option value="2">Masset</option>
-					<option value="3">Noémie</option>
-					<option value="4">Luca</option>
-				</select>
+				<img src="img/SVG/croixAjout.svg" alt="">
 			</fieldset>
 			<fieldset>
-				<label for="joueur2">Joueur 2</label>
-				<select name="joueur2" size="4" required>
-					<option value="5">Anthony</option>
-					<option value="6">Masset</option>
-					<option value="7">Noémie</option>
-					<option value="8">Luca</option>
-				</select>
+				<h2>Sélectionner deux joueurs</h2>
+				<div name="player" id="player" multiple size="4" required>
+					<div>
+						<h3>Anthony</h3>
+						<p class="intitule">
+							Totale de partie gagnée
+						</p>
+						<p class="intituleScore">
+							62
+						</p>
+						<p class="intitule">
+							Niveau
+						</p>
+						<p class="intituleScore">
+							4
+						</p>
+					</div>
+					<div>
+						<h3>Masset</h3>
+						<p class="intitule">
+							Totale de partie gagnée
+						</p>
+						<p class="intituleScore">
+							15
+						</p>
+						<p class="intitule">
+							Niveau
+						</p>
+						<p class="intituleScore">
+							2
+						</p>
+					</div>
+					<div>
+						<h3>Noémie</h3>
+						<p class="intitule">
+							Totale de partie gagnée
+						</p>
+						<p class="intituleScore">
+							4
+						</p>
+						<p class="intitule">
+							Niveau
+						</p>
+						<p class="intituleScore">
+							1
+						</p>
+					</div>
+					<div>
+						<h3>Luca</h3>
+						<p class="intitule">
+							Totale de partie gagnée
+						</p>
+						<p class="intituleScore">
+							7
+						</p>
+						<p class="intitule">
+							Niveau
+						</p>
+						<p class="intituleScore">
+							1
+						</p>
+					</div>
+				</div>
+				<input type="submit" value="Jouer">
 			</fieldset>
-			<input type="submit" value="Jouez">
 		</form>
 	</section>
 	<section id="jeu" class="hidden">
 		<div>
-			<h2 id="joueurOne">
+			<h2 id="namePlayerOne">
 				Joueur 1
 			</h2>
-			<p class="score" id="scoreJoueurOne">
+			<p class="score" id="scorePlayerOne">
 				00
 			</p>
-			<input type="submit" id="win1" name="win1">
+			<input type="submit" id="winnerOne" name="winnerOne">
 		</div>
 		<div>
 			<p class="vs">VS</p>
 		</div>
 		<div>
-			<h2 id="joueurTwo">
+			<h2 id="namePlayerTwo">
 				Joueur 2
 			</h2>
-			<p class="score" id="scoreJoueurTwo">
+			<p class="score" id="scorePlayerTwo">
 				00
 			</p>
-			<input type="submit" id="win2" name="win2">
+			<input type="submit" id="winnerTwo" name="winnerTwo">
 		</div>
 	</section>
 	
